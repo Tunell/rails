@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+  <title>Portfolio</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+  <style type="text/css">.tk-livory,Livory{font-family:"livory",sans-serif;}</style>
+<link rel="stylesheet" href="http://use.typekit.net/c/cf530f/livory:i4:i7:n4:n7.S02:J:2,S04:J:2,S01:J:2,S03:J:2/d?3bb2a6e53c9684ffdc9a9bf31d5b2a62b13a99de1109782c8b0e4dcab226132ebdea3972959f37b6fe1ab556e1d8ad1078cde63fd44ac5d77eab4c4c7d514f43c32e4ca2383917c99d457f3d931d1d886c3117a69fbe1f2ac3fb4261d9f5620de65c9f8d0e6292202dcbb66de6c13313083adca31d9f11ee5f730cf64fbd9f2c7bb286b431ddedd08ab771772da004a9698af33d813b0500de4ec9d2d3">
+
+</head>
+<body>
+	<div id="background1"></div>
+	<div id="background2"></div>
+	<div id= "content">
+		<div id="header">
+			<a href="/"><div id="logo"><%=image_tag("P-loggo.png", alt: "P-Loggo")%></div></a>
+			<div id="leftHeader">
+				<a href="/welcome/projects/"><button class="nav" nav-toggle='projects'>Projects</button></a>
+				<a href="/welcome/about/"><button class="nav"  nav-toggle='about'>About</button></a>
+			</div>
+			<div id="rightHeader">
+				<a href="/welcome/cv/"><button class="nav" >CV</button></a>
+				<a href="/welcome/contact/"><button class="nav"  nav-toggle='contact'>Contact</button></a>
+			</div>
+		</div>
+		<div id="mainContent">
+			<%= yield %>
+		</div>
+		<div id= "sideContent">
+		</div>
+	</div>
+</body>
+</html>
