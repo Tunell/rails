@@ -4,6 +4,12 @@ Portfolio::Application.routes.draw do
   get "welcome/about"
   get "welcome/cv"
   get "welcome/contact"
+  get "welcome/ajaxNav/index" => "welcome#ajaxNavIndex"
+  get "welcome/ajaxNav/projects" => "welcome#ajaxNavProjects"
+  get "welcome/ajaxNav/about" => "welcome#ajaxNavAbout"
+  get "welcome/ajaxNav/cv" => "welcome#ajaxNavCv"
+  get "welcome/ajaxNav/contact" => "welcome#ajaxNavContact"
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -58,4 +64,6 @@ Portfolio::Application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+
+
 end

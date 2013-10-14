@@ -14,4 +14,4 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require modernizr.js
-//= require navigation.coffee
+//= require navigation.js
