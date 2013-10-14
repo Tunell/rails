@@ -4,8 +4,8 @@ class WelcomeController < ApplicationController
   def about
   	render :partial => "about"
   end
-  def ajaxNavIndex
- 	render 'index.js'
+  def ajaxNavWelcome
+ 	render 'welcome.js'
 end
   def ajaxNavAbout
  	render 'about.js'

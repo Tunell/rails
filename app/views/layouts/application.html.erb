@@ -10,25 +10,30 @@
 
 </head>
 <body>
-	<div id="background1"></div>
-	<div id="background2"></div>
-	<div id= "content">
-		<div id="header">
-			<a href="/"><div id="logo"><%=image_tag("P-loggo.png", alt: "P-Loggo")%></div></a>
-			<div id="leftHeader">
-				<button class="nav" nav-toggle='projects'>Projects</button>
-				<button class="nav" nav-toggle='about'>About</button>
+	<div id="container">
+		<div id="background1"></div>
+		<div id="background2"></div>
+		<div id= "content">
+			<div id="header">
+				<a style= "cursor: pointer" nav-toggle='welcome'><div id="logo"><%=image_tag("P-loggo.png", alt: "P-Loggo")%></div></a>
+				<div id="leftHeader">
+					<button class="nav" nav-toggle='projects'>Projects</button>
+					<button class="nav" nav-toggle='about'>About</button>
+				</div>
+				<div id="rightHeader">
+					<button class="nav" nav-toggle='cv' >CV</button>
+					<button class="nav" nav-toggle='contact'>Contact</button>
+				</div>
 			</div>
-			<div id="rightHeader">
-				<button class="nav" nav-toggle='cv' >CV</button>
-				<button class="nav" nav-toggle='contact'>Contact</button>
+			<div id="mainContent">
+				<%= yield %>
 			</div>
-		</div>
-		<div id="mainContent">
-			<%= yield %>
-		</div>
-		<div id= "sideContent">
+			<div id= "sideContent">
+			</div>
 		</div>
 	</div>
+	<div id="footer"></br>Pelle Tunell</br>
+	Phone: 070 389 98 96</br>
+	Email: Pelle.Tunell@Gmail.com</div>
 </body>
 </html>

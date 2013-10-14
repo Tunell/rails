@@ -1,10 +1,7 @@
 Portfolio::Application.routes.draw do
-  get "welcome/index"
-  get "welcome/projects"
-  get "welcome/about"
-  get "welcome/cv"
-  get "welcome/contact"
-  get "welcome/ajaxNav/index" => "welcome#ajaxNavIndex"
+  get "projects" => "welcome#projects"
+  get "cv" => "welcome#cv"
+  get "welcome/ajaxNav/welcome" => "welcome#ajaxNavWelcome"
   get "welcome/ajaxNav/projects" => "welcome#ajaxNavProjects"
   get "welcome/ajaxNav/about" => "welcome#ajaxNavAbout"
   get "welcome/ajaxNav/cv" => "welcome#ajaxNavCv"
