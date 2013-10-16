@@ -18,5 +18,9 @@ class WelcomeController < ApplicationController
   end
   def ajaxNavProjects
  	render 'projects.js'
+	end
+  def download
+  	pdf_filename = File.join(Rails.public_path, "/cv.pdf")
+  	send_file(pdf_filename, :filename => "Pelles CV.pdf", :type => "application/pdf")
   end
 end
