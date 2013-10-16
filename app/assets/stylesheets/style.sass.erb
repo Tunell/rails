@@ -184,6 +184,7 @@ html, body
 	text-align: left
 	position: relative
 	width: 100%
+	min-width: 550px
 	height: 6em
 	margin-top: -6em
 	clear: both
@@ -193,16 +194,31 @@ html, body
 	#container
 		margin-left: auto
 		margin-right: auto
-		width: 520px
-		height: 100%
+		width: 709px
+		@media (min-width: 950px)
+			width: 75%
+		@media (max-width: 950px) 
+			width: 100%
 
+#footerPic
+	position: absolute
+	top: -105px
 
 #columnRight
-	float: right
-	margin-top: 22px
-#column
+	padding-top: 22px
+	margin-left: auto
+	margin-bottom: -22px
+	height: 3em
+	max-width: 308px
+	width: 43.56%
+#columnLeft
 	float: left
 	margin-top: 20px
+	width: 173px
+	@media (min-width: 700px)
+		margin-left: 2.8%
+	@media (max-width: 700px) 
+		margin-left: 19px
 
 
 /* Webicons by Adam Fairhead at Fairhead Creative http://fairheadcreative.com*/
