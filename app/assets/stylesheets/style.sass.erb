@@ -71,7 +71,23 @@ html, body
 		background: -ms-linear-gradient(top,  #333 1%,#666 100%)
 		background: linear-gradient(to bottom,  #333 1%,#666 100%)
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#333', endColorstr='#666',GradientType=0 )
-
+	#header
+		.nav:hover
+			background: -moz-radial-gradient(center, ellipse cover,  $w1 0%, rgba(255,255,239,0) 50%, rgba(255,255,223,0) 100%)
+			background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,$w1), color-stop(50%,rgba(255,255,239,0)), color-stop(100%,rgba(255,255,223,0)))
+			background: -webkit-radial-gradient(center, ellipse cover,  $w1 0%,rgba(255,255,239,0) 50%,rgba(255,255,223,0) 100%)
+			background: -o-radial-gradient(center, ellipse cover,  $w1 0%,rgba(255,255,239,0) 50%,rgba(255,255,223,0) 100%)
+			background: -ms-radial-gradient(center, ellipse cover,  $w1 0%,rgba(255,255,239,0) 50%,rgba(255,255,223,0) 100%)
+			background: radial-gradient(ellipse at center,  $w1 0%,rgba(255,255,239,0) 50%,rgba(255,255,223,0) 100%)
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$w', endColorstr='#00ffffdf',GradientType=1 )
+		#logo:hover
+			background: -moz-radial-gradient(center, ellipse cover,  $w1 0%, rgba(255,255,239,0) 50%, rgba(255,255,223,0) 100%)
+			background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,$w1), color-stop(50%,rgba(255,255,239,0)), color-stop(100%,rgba(255,255,223,0)))
+			background: -webkit-radial-gradient(center, ellipse cover,  $w1 0%,rgba(255,255,239,0) 50%,rgba(255,255,223,0) 100%)
+			background: -o-radial-gradient(center, ellipse cover,  $w1 0%,rgba(255,255,239,0) 50%,rgba(255,255,223,0) 100%)
+			background: -ms-radial-gradient(center, ellipse cover,  $w1 0%,rgba(255,255,239,0) 50%,rgba(255,255,223,0) 100%)
+			background: radial-gradient(ellipse at center,  $w1 0%,rgba(255,255,239,0) 50%,rgba(255,255,223,0) 100%)
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$w', endColorstr='#00ffffdf',GradientType=1 )
 
 #header
 	text-align: center
@@ -101,30 +117,17 @@ html, body
 		font-weight: 100
 	#logo
 		margin-top: 0px
-	.nav:hover
-		background: -moz-radial-gradient(center, ellipse cover,  $w1 0%, rgba(255,255,239,0) 50%, rgba(255,255,223,0) 100%)
-		background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,$w1), color-stop(50%,rgba(255,255,239,0)), color-stop(100%,rgba(255,255,223,0)))
-		background: -webkit-radial-gradient(center, ellipse cover,  $w1 0%,rgba(255,255,239,0) 50%,rgba(255,255,223,0) 100%)
-		background: -o-radial-gradient(center, ellipse cover,  $w1 0%,rgba(255,255,239,0) 50%,rgba(255,255,223,0) 100%)
-		background: -ms-radial-gradient(center, ellipse cover,  $w1 0%,rgba(255,255,239,0) 50%,rgba(255,255,223,0) 100%)
-		background: radial-gradient(ellipse at center,  $w1 0%,rgba(255,255,239,0) 50%,rgba(255,255,223,0) 100%)
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$w', endColorstr='#00ffffdf',GradientType=1 )
-	#logo:hover
-		background: -moz-radial-gradient(center, ellipse cover,  $w1 0%, rgba(255,255,239,0) 50%, rgba(255,255,223,0) 100%)
-		background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,$w1), color-stop(50%,rgba(255,255,239,0)), color-stop(100%,rgba(255,255,223,0)))
-		background: -webkit-radial-gradient(center, ellipse cover,  $w1 0%,rgba(255,255,239,0) 50%,rgba(255,255,223,0) 100%)
-		background: -o-radial-gradient(center, ellipse cover,  $w1 0%,rgba(255,255,239,0) 50%,rgba(255,255,223,0) 100%)
-		background: -ms-radial-gradient(center, ellipse cover,  $w1 0%,rgba(255,255,239,0) 50%,rgba(255,255,223,0) 100%)
-		background: radial-gradient(ellipse at center,  $w1 0%,rgba(255,255,239,0) 50%,rgba(255,255,223,0) 100%)
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$w', endColorstr='#00ffffdf',GradientType=1 )
+	
 
 #leftHeader
 	float: left
 	margin-top: -130px
+	margin-left: 2%
 
 #rightHeader
 	float: right
 	margin-top: -130px
+	margin-right: 2%
 
 #content
 	overflow: auto
@@ -135,17 +138,10 @@ html, body
 	max-width: 1280px
 	padding-bottom: 6em
 	background-color: transparent
-	@media (min-width: 900px)
-	@media (max-width: 900px) and (min-width: 400px)
-	@media (max-width: 400px)
 
 #mainContent
 	margin-top: 100px
-	
-	@media (min-width: 900px)
-		width: 60%
-	@media (max-width: 900px) 
-		width: 100%
+	width: 100%
 
 	margin-left: auto
 	margin-right: auto
@@ -162,11 +158,14 @@ html, body
 		color: #6c6c6c
 	.iconBG
 		position: absolute
-		z-index: -1
+		z-index: 2
+		display: none
 	.imagePlaceHolder
 		display: inline-block
-		margin-left: 2%
+		margin-left: 1%
 		margin-top: 2%
+	.imagePlaceHolder:hover .iconBG
+		display: inline-block
 	#about
 		max-width: 35em
 		margin-left: auto

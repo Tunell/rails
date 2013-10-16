@@ -20,16 +20,6 @@ $(document).ready(function() {
       return $("#mainContent").fadeIn("slow");
     });
   });
-  $(".icon").mouseenter(function() {
-    return $(this).animate({
-      opacity: .01
-    });
-  });
-  return $(".icon").mouseleave(function() {
-    return $(this).animate({
-      opacity: 1
-    });
-  });
 });
 /*
 $(document).ready(function() {
