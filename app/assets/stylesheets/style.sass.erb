@@ -255,10 +255,10 @@ $webicons-url: "assets/webicons/" !default
 
 @each $webicons-icon in $webicons-icons
 	.no-svg .webicon.#{$webicons-icon}
-		background: url(<%= asset_path '#{$webicons-url}webicon-#{$webicons-icon}-m.png'%>)
+		background: url(<%= asset_path ('#{$webicons-url}webicon-#{$webicons-icon}-m.png')%>)
 	.no-svg .webicon.#{$webicons-icon}.large
-		background: url(<%= asset_path '#{$webicons-url}webicon-#{$webicons-icon}.png'%>)
+		background: url(<%= asset_path ('#{$webicons-url}webicon-#{$webicons-icon}.png')%>)
 	.no-svg .webicon.#{$webicons-icon}.small
-		background: url(<%= asset_path '#{$webicons-url}webicon-#{$webicons-icon}-s.png'%>)
+		background: url(<%= asset_path ('#{$webicons-url}webicon-#{$webicons-icon}-s.png')%>)
 	.svg .webicon.#{$webicons-icon}
-		background: url(<%= asset_path '#{$webicons-url}webicon-#{$webicons-icon}.svg'%>)
+		background: url(<%= asset_path ('#{$webicons-url}webicon-#{$webicons-icon}.svg')%>)
