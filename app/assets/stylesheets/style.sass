@@ -62,6 +62,16 @@ html, body
 		background: -ms-linear-gradient(left,  $b0 0%,rgba(0,0,0,0.03) 1%,rgba(0,0,0,1) 30%,rgba(0,0,0,1) 70%,$b0 100%)
 		background: linear-gradient(to right,  $b0 0%,rgba(0,0,0,0.03) 1%,rgba(0,0,0,1) 30%,rgba(0,0,0,1) 70%,$b0 100%)
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$b0', endColorstr='$b0',GradientType=1 )
+	#footer
+		background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIxJSIgc3RvcC1jb2xvcj0iIzM4MzgzOCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM2NjY2NjYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+)
+		background: -moz-linear-gradient(top,  #333 1%, #666 100%)
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#333), color-stop(100%,#666))
+		background: -webkit-linear-gradient(top,  #333 1%,#666 100%)
+		background: -o-linear-gradient(top,  #333 1%,#666 100%)
+		background: -ms-linear-gradient(top,  #333 1%,#666 100%)
+		background: linear-gradient(to bottom,  #333 1%,#666 100%)
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#333', endColorstr='#666',GradientType=0 )
+
 
 #header
 	text-align: center
@@ -172,6 +182,7 @@ html, body
 	min-height: 100%
 
 #footer
+	text-align: left
 	position: relative
 	width: 100%
 	height: 6em
@@ -180,11 +191,74 @@ html, body
 	color: #bbb
 	font-family: Helvetica, Arial, sans-serif
 	background: #444
-	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIxJSIgc3RvcC1jb2xvcj0iIzM4MzgzOCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM2NjY2NjYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+)
-	background: -moz-linear-gradient(top,  #333 1%, #666 100%)
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#333), color-stop(100%,#666))
-	background: -webkit-linear-gradient(top,  #333 1%,#666 100%)
-	background: -o-linear-gradient(top,  #333 1%,#666 100%)
-	background: -ms-linear-gradient(top,  #333 1%,#666 100%)
-	background: linear-gradient(to bottom,  #333 1%,#666 100%)
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#333', endColorstr='#666',GradientType=0 )
+	#container
+		margin-left: auto
+		margin-right: auto
+		width: 520px
+		height: 100%
+
+
+#columnRight
+	float: right
+	margin-top: 22px
+#column
+	float: left
+	margin-top: 20px
+
+
+/* Webicons by Adam Fairhead at Fairhead Creative http://fairheadcreative.com*/
+
+.webicon
+	display: inline-block
+	background-size: 100%
+	width: 30px
+	height: 30px
+	text-indent: -999em
+	text-align: left
+	-moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.5)
+	-webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.5)
+	box-shadow: 0 1px 0 rgba(0, 0, 0, 0.5)
+	-moz-border-radius: 5px
+	-webkit-border-radius: 5px
+	border-radius: 5px
+	margin-bottom: 5px
+	margin-right: 5px
+
+.webicon:hover
+	margin: -1px 0 1px
+	-moz-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.25)
+	-webkit-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.25)
+	box-shadow: 0 4px 0 rgba(0, 0, 0, 0.25)
+	margin-right: 5px
+
+.webicon.small
+	width: 20px
+	height: 20px
+	-moz-border-radius: 3px
+	-webkit-border-radius: 3px
+	border-radius: 3px
+	margin-right: 5px
+
+.webicon.large
+	width: 48px
+	height: 48px
+	-moz-border-radius: 6px
+	-webkit-border-radius: 6px
+	border-radius: 6px
+	margin-right: 5px
+
+// Include or remove the icons you want to use on your site from this list.
+$webicons-icons: github google linkedin mail skype stackoverflow twitter wordpress
+
+// Specify the path to the webicons directory here. Include trailing slash.
+$webicons-url: "webicons/" !default
+
+@each $webicons-icon in $webicons-icons
+	.no-svg .webicon.#{$webicons-icon}
+		background: url("#{$webicons-url}webicon-#{$webicons-icon}-m.png")
+	.no-svg .webicon.#{$webicons-icon}.large
+		background: url("#{$webicons-url}webicon-#{$webicons-icon}.png")
+	.no-svg .webicon.#{$webicons-icon}.small
+		background: url("#{$webicons-url}webicon-#{$webicons-icon}-s.png")
+	.svg .webicon.#{$webicons-icon}
+		background: url("#{$webicons-url}webicon-#{$webicons-icon}.svg")
