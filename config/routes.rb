@@ -4,6 +4,7 @@ Portfolio::Application.routes.draw do
   get "welcome/ajaxNav/about" => "welcome#ajaxNavAbout"
   get "welcome/ajaxNav/cv" => "welcome#ajaxNavCv"
   get "welcome/ajaxNav/contact" => "welcome#ajaxNavContact"
+  get "download" => "welcome#download"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

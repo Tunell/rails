@@ -6,17 +6,17 @@ class WelcomeController < ApplicationController
   end
   def ajaxNavWelcome
  	render 'welcome.js'
-end
+  end
   def ajaxNavAbout
  	render 'about.js'
-end
+  end
   def ajaxNavContact
  	render 'contact.js'
-end
+  end
   def ajaxNavCv
  	render 'cv.js'
-end
+  end
   def ajaxNavProjects
  	render 'projects.js'
-end
+  end
 end
